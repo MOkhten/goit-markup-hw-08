@@ -1,11 +1,13 @@
 /* ---------------------------------------------GALLERY-------------------------------------------- */
 .gallery {
-    @include mobile{
+@include mobile {
         display: none;
     }
          @include tablet {
              display: none;
          }
+ 
+
         @include desktop {
             display: flex;
         }

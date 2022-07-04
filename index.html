@@ -26,7 +26,7 @@
     <svg class="" width="40" height="40"
     aria-label="переключатель мобильного меню">
                 <use class="icon-menu" href=".//img/symbols-defs.svg#icon-menu"> </use>
-                <use class="icon-cross" href=".//img/symbol-defs.svg#icon-button"></use>
+                <use class="icon-cross" href=".//img/symbols-defs.svg#icon-button"></use>
                
             </svg>
 </button>
@@ -37,6 +37,15 @@
         <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
     </ul>
     <ul class="soc">
+         <li class="nav__item">
+            <a href="tel+380961111111" class="links soc__link soc__tel">
+                <svg class="soc__icon" width="10" height="20">
+                <use href=".//img/symbols-defs.svg#icon-phone">
+                </use>
+            </svg>
+            +38 096 111 11 11 </a>
+            
+    </li>
         <li class="nav__item">
             <a href="info@devstudio.com" class="links soc__link">
                 
@@ -46,17 +55,7 @@
             </svg>
             info@devstudio.com </a>
         </li>
-     
-            
-        <li class="nav__item">
-            <a href="tel+380961111111" class="links soc__link">
-                <svg class="soc__icon" width="10" height="20">
-                <use href=".//img/symbols-defs.svg#icon-phone">
-                </use>
-            </svg>
-            +38 096 111 11 11 </a>
-            
-    </li>
+    
     </ul>
     </nav>
 </div>
@@ -252,7 +251,26 @@
         <ul class="flex-container">
             <li class="card-set__item">
                 <div class="flex-element">
-                <img src="./img/img3.jpg" alt="фото сотрудника" width="270">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./img/img3.jpg 1x,
+                ./img/card-2x.jpg 2x
+                " 
+                media="(min-width:1600px)"
+                />
+                <source
+                 srcset="
+                 ./img/card-lap-1x.jpg 1x,
+                ./img/card-lap-2x.jpg 2x" 
+                media="(min-width:768px)"/>
+                <source srcset="./img/card-mob-1x.jpg 1x,
+                ./img/card-mob-2x.jpg 2x" 
+                media="(min-width:480px)"/>
+                <img
+                 src="./img/img3.jpg" alt="фото сотрудника" width="450" height="460">
+                    </picture>
+                    
                 <div class="card-set__list">
                 <h3 class="card-set__item-title">Игорь Демьяненко</h3>
                 <p class="card-set__top-text">Product Designer</p>
