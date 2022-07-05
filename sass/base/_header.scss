@@ -20,10 +20,13 @@
 }
 
 .nav__list {
-    display: block;
-    margin-bottom: 271px;
+    display: none;
+    @include tablet {
+        display: flex;
+    }
     @include desktop {
         display: flex;
+     margin-left: 93px;
     }
     & .nav__link:hover,
     & .nav__link:focus {
@@ -36,8 +39,8 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    // padding-top: 32px;
-    padding-bottom: 35px;
+     padding-top: 32px;
+    padding-bottom: 32px;
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
@@ -93,8 +96,8 @@
 }
 
 .menu-button {
-    display: inline-flex;
-    margin-left: 276px;
+    display: block;
+    margin-left: auto;
     padding: 0px;
     border: none;
     background-color: transparent;
@@ -130,10 +133,11 @@
     font-size: 40px;
     @media screen and (max-width: 767px) {
             display: none;
-            position: absolute;
+            position: fixed;
                 top: 0%;
                 left: 0%;
                 width: 100%;
+                height: 100vh;
                 &.is-open {
                     display: block;
                 }
@@ -143,13 +147,76 @@
     }
 }
 
+.menu__nav__list {
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu__soc {
+    @include tablet {
+    display: none;
+}
+}
+
+.menu__nav__item{
+margin-bottom: 32px;
+}
+
+.menu__nav__link {
+    font-size: 40px;
+    font-weight: 500;
+    color: #212121;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.menu-soc {
+    display: block;
+    justify-content: left;
+    text-align: left;
+    
+}
+
+ .menu__soc__link--tel {
+color: var(--accent-color);
+text-align: left;
+justify-content: left;
+text-decoration: none;
+font-size: 34px;
+font-weight: 500;
+margin-top: 274px;
+ }
+
+ .menu__soc__link {
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 32px;
+ }
+
+ .menu__soc--list{
+    display: flex;
+    margin-top: 64px;
+ }
+
+ 
+
+ .menu__soc--list-link{
+font-size: 18px;
+    font-weight: 500;
+    color: var(--accent-color);
+ }
 /* ------------------------------------------SOC---------------------------------------------- */
 
 .soc {
-    display: block;
-    margin-left: 0px;
+    display: none;
     
-@include desktop {
+@include tablet {
 display: flex;
 margin-left: auto;
 }
@@ -163,25 +230,16 @@ margin-left: auto;
     margin-left: 50px;
 }
 
-.soc__tel {
-    font-size: 34px;
-    font-weight: 500;
-    color: #2196F3;
-    margin-bottom: 32px;
-}
 
 .soc .links {
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 24px;
     text-decoration: none;
     margin-top: 0px;
     margin-bottom: 0px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: left;
-    text-align: left;
 }
 
 

@@ -75,8 +75,7 @@
 
 .feature-list__item {
     margin-right: 0px;
-    @include desktop{
-    margin-right: 30px;}
+    
 }
 
 .feature-list__item:last-child {

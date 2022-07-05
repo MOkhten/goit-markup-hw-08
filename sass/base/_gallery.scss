@@ -1,12 +1,6 @@
 /* ---------------------------------------------GALLERY-------------------------------------------- */
 .gallery {
-@include mobile {
-        display: none;
-    }
-         @include tablet {
-             display: none;
-         }
- 
+display: none;
 
         @include desktop {
             display: flex;
