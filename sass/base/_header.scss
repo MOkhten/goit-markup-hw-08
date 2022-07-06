@@ -297,10 +297,10 @@ margin-left: auto;
     &:focus {
             fill: var(--accent-color);
         }
-    @include mobile {
+
+    @media screen and (max-width: 767px) {
         display: none;
-        margin-right: 0px;
-    }
+        margin-right: 0px;}
 }
 
 
