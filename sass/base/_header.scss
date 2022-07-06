@@ -127,7 +127,10 @@
 
 
 .menu-container{
-    padding: 48px 40px;
+    padding-top:10px;
+    padding-right: 10px;
+    padding-bottom:  40px;
+    padding-left: 48px;
     background-color:#FFFFFF;
     text-align: left;
     font-size: 40px;
@@ -275,6 +278,9 @@ margin-left: auto;
 .links::before {
     content: "";
     margin-right: 10px;
+    @media screen and (max-width: 768px) {
+        margin-right: 0px;
+    }
 }
 
 .soc__link {

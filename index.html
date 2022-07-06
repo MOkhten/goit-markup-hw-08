@@ -46,24 +46,38 @@
             
     </li>
     </ul>
-  <button type="button" class="menu-button is-open"
+  <!-- <button  
+  type="button"
+   class="menu-button "
                 aria-expanded="false"
                 aria-controls="menu-container"
                 data-menu-button>
                     
     <svg class="" width="40" height="40"
     aria-label="переключатель мобильного меню">
-                <use class="icon-menu" href=".//img/symbols-defs.svg#icon-menu"> </use>
+                
                 <use class="icon-cross" href=".//img/symbols-defs.svg#icon-button"></use>
-               
+               <use class="icon-menu" href=".//img/symbols-defs.svg#icon-menu"> </use>
             </svg>
+</button>-->
+<button  type="button" class="menu-button" is-open-menu
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+    <svg class="" width="40" height="40"></svg> <use class="icon-menu" href=".//img/symbols-defs.svg#icon-menu"> </use>
 </button>
 <div class="menu-container" id="menu-container" data-menu>
+     <button type="button" class="menu-button" is-close-menu><svg class="" width="40" height="40"></svg>
+    <use class="icon-cross" href=".//img/symbols-defs.svg#icon-button"></use>
+</button>
+<div class="mob-container--top">
     <ul class="menu__nav__list">
         <li class="menu__nav__item"><a href="" class="menu__nav__link current">Студия</a></li>
         <li class="menu__nav__item"><a href="./portfolio.html" class="menu__nav__link">Портфолио</a></li>
         <li class="menu__nav__item"><a href="" class="menu__nav__link">Контакты</a></li>
     </ul>
+    </div>
+    <div class="mob-container--bottom">
     <ul class="menu__soc">
          <li class="menu__nav__items">
             <a href="tel+380961111111" class="links menu__soc__link--tel">
@@ -96,6 +110,7 @@
 <li class="menu__soc--list-item">
     <a href="" class="menu__soc--list-link">LinkedIn</a> </li>
     </ul>
+    </div>
     </div>
     </nav>
 </div>
@@ -271,18 +286,17 @@
                  <source 
                         srcset="
                         ./img/img3.jpg 1x,
-                ./img/card-2x.jpg 2x
-                " 
+                ./img/card-2x.jpg 2x" width="270" 
                 media="(min-width:1200px)"
                 />
                 <source
                  srcset="
-                 ./img/card-lap-1x.jpg 1x,
-                ./img/card-lap-2x.jpg 2x" 
+                 ./img/card-lap-1x.jpg 1x, 
+                ./img/card-lap-2x.jpg 2x" width="354"
                 media="(min-width: 768px)"/>
             
                 <img
-                 src="./img/card-mob-1x.jpg" alt="фото сотрудника" />
+                 src="./img/img3.jpg" alt="фото сотрудника"  />
                     </picture>
 
                 <div class="card-set__list">
@@ -345,14 +359,13 @@
                  <source 
                         srcset="
                         ./img/img4.jpg 1x,
-                ./img/olga-2x.jpg 2x
-                " 
+                ./img/olga-2x.jpg 2x" width="270" 
                 media="(min-width:1200px)"
                 />
                 <source
                  srcset="
                  ./img/olga-lap-1x.jpg 1x,
-                ./img/olga-lap-2x.jpg 2x" 
+                ./img/olga-lap-2x.jpg 2x" width="354"
                 media="(min-width: 768px)"/>
             
                 <img
@@ -416,14 +429,13 @@
                  <source 
                         srcset="
                         ./img/img5.jpg 1x,
-                ./img/nic-2x.jpg 2x
-                " 
+                ./img/nic-2x.jpg 2x" width="270"
                 media="(min-width:1200px)"
                 />
                 <source
                  srcset="
                  ./img/nic-lap-1x.jpg 1x,
-                ./img/nic-lap-2x.jpg 2x" 
+                ./img/nic-lap-2x.jpg 2x" width="354"
                 media="(min-width: 768px)"/>
             
                 <img
@@ -486,14 +498,13 @@
                  <source 
                         srcset="
                         ./img/img6.jpg 1x,
-                ./img/mix-2x.jpg 2x
-                " 
+                ./img/mix-2x.jpg 2x" width="270" 
                 media="(min-width:1200px)"
                 />
                 <source
                  srcset="
                  ./img/mix-lap-1x.jpg 1x,
-                ./img/mix-lap-2x.jpg 2x" 
+                ./img/mix-lap-2x.jpg 2x" width="354"
                 media="(min-width: 768px)"/>
             
                 <img
