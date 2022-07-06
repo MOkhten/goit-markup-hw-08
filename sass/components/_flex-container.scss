@@ -8,7 +8,7 @@
 }
 
 .flex-elements {
-    width: 370px;
+    width: calc(100% - 30px);
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
     border-top: none;

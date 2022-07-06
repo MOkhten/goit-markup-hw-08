@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    
 }
 
 *,
@@ -21,6 +22,9 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
+    @media screen and (max-width: 320px) {
+            overflow: hidden;
+        }
 }
 
 textarea {
