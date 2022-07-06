@@ -294,12 +294,37 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-top: 64px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu__soc--list {
+    display: none;
+  }
+}
+
+.menu__soc--list-item {
+  margin-right: 20px;
+  position: relative;
 }
 
 .menu__soc--list-link {
   font-size: 18px;
   font-weight: 500;
   color: var(--accent-color);
+  text-decoration: none;
+}
+
+.menu__soc--list-item::after {
+  content: " ";
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  position: absolute;
+  right: -10px;
+  bottom: 5px;
+}
+.menu__soc--list-item::after:hover, .menu__soc--list-item::after:focus {
+  background-color: var(--accent-color);
 }
 
 /* ------------------------------------------SOC---------------------------------------------- */
@@ -1400,6 +1425,12 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .footer__wrap {
+    display: none;
+  }
+}
+
 .footer__adress {
   margin-right: 70px;
 }
@@ -1465,6 +1496,11 @@ ul {
   margin-left: 93px;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .footer-content {
+    display: none;
+  }
+}
 
 .footer-content__title {
   color: var(--text-color-secondary);
@@ -1519,4 +1555,52 @@ ul {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .online {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__mobile {
+    display: none;
+  }
+}
+
+.footer__mobile__wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.footer__mobile__nav {
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.footer__mobile__nav--item {
+  margin-bottom: 8px;
+}
+
+.footer-content__block-mobile {
+  display: block;
+}
+
+.footer-content__input-mobile {
+  margin-bottom: 20px;
+  min-width: 450px;
+  height: 50px;
+  background-color: #2F303A;
+  border-radius: 4px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-content__input-mobile:focus {
+  border-color: #2196F3;
+  color: #ECECEC;
 }/*# sourceMappingURL=main.css.map */
