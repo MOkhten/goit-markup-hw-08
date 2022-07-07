@@ -23,6 +23,8 @@
     display: none;
     @include tablet {
         display: flex;
+        margin-left: 88px;
+        margin-right: 84px;
     }
     @include desktop {
         display: flex;
@@ -55,6 +57,7 @@
 
 .nav__item {
     display: flex;
+    
 }
 
 .nav__link.current::after {
@@ -95,7 +98,7 @@
     opacity: 1;
 }
 
-.menu-button, .menu-button-close {
+.menu-toggle {
     display: block;
     margin-left: auto;
     padding: 0px;
@@ -127,13 +130,13 @@
 
 
 .menu-container{
-    padding-top:10px;
-    padding-right: 10px;
-    padding-bottom:  40px;
-    padding-left: 48px;
-    background-color:#FFFFFF;
-    text-align: left;
-    font-size: 40px;
+    padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        padding-left: 48px;
+        background-color: #FFFFFF;
+        text-align: left;
+        font-size: 40px;
     @media screen and (max-width: 767px) {
             display: none;
             position: fixed;
@@ -243,13 +246,16 @@ font-size: 18px;
     display: none;
     
 @include tablet {
-display: flex;
+display: block;
 margin-left: auto;
 }
     & .links:hover,
     & .links:focus {
             color: var(--accent-color);
         }
+@include desktop {
+    display: flex;
+}
 }
 
 .soc .items+.items {
@@ -273,6 +279,8 @@ margin-left: auto;
 .links {
     display: inline-flex;
     align-items: center;
+    margin-bottom: 10px;
+    
 }
 
 .links::before {
@@ -287,11 +295,16 @@ margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
+    @include desktop {
+        font-size: 14px;
+
+    }
 }
 
 .soc__icon {
     fill: currentColor;
-    margin-right: 10px;
+    
     
     &:hover,
     &:focus {
@@ -301,6 +314,9 @@ margin-left: auto;
     @media screen and (max-width: 767px) {
         display: none;
         margin-right: 0px;}
+}
+@include desktop {
+    margin-right: 10px;
 }
 
 
