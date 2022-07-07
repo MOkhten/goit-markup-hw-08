@@ -46,24 +46,22 @@
             
     </li>
     </ul>
-  <button  
-  type="button"
-   class="menu-button " is-open-menu
-                aria-expanded="false"
-                aria-controls="menu-container"
-                data-menu-button>
-                    
-    <svg class="" width="40" height="40"
-    aria-label="переключатель мобильного меню">
-                
-                
-               <use class="icon-menu" href=".//img/symbols-defs.svg#icon-menu"> </use>
-            </svg>
+    <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >         
+    <svg class="" width="40" height="40">
+    <use class="icon-menu" href=".//img/symbols-defs.svg#icon-menu"></use>
+        </svg>
 </button>
 <div class="menu-container" id="menu-container" data-menu>
-     <button type="button" class="menu-button-close" is-close-menu>
-        <svg class="" width="40" height="40"></svg>
+     <button type="button" class="menu-button-close">
+        <svg class="" width="40" height="40">
     <use class="icon-cross" href=".//img/icon-defs.svg#icon-crosss"></use>
+    </svg>
 </button>
 <div class="mob-container--top">
     <ul class="menu__nav__list">
@@ -118,7 +116,8 @@
         <button data-modal-open class="button">Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="modal__button" data-modal-close><svg class="modal__icon" width="11" height="11">
+                <button type="button" class="modal__button" data-modal-close>
+                    <svg class="modal__icon" width="11" height="11">
                 <use href=".//img/symbol-defs.svg#icon-crosss">
                 </use>
             </svg>
@@ -620,8 +619,9 @@
 
 
     <footer class="footer"> 
-        <div class="footer__wrap">
+         
         <div class="container">
+           <div class="footer__wrap">
             <section class="footer__adress">
         <a href="" class="header__logo">Web<span class="header__logo--white">Studio </span> </a>
         <address>
@@ -774,6 +774,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
     </body>
     
     </html>

@@ -1438,6 +1438,13 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media screen and (max-width: 767px) {
   .footer__wrap {
     display: none;
@@ -1445,7 +1452,21 @@ ul {
 }
 
 .footer__adress {
-  margin-right: 70px;
+  margin-right: 165px;
+  margin-left: 76px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__adress {
+    margin-right: 70px;
+    text-align: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .footer__adress--info {
@@ -1479,6 +1500,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap .container {
+    margin-left: 76px;
+  }
 }
 
 .footer {
@@ -1514,6 +1540,20 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
 
 .footer-content__title {
   color: var(--text-color-secondary);
@@ -1525,10 +1565,20 @@ ul {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+@media screen and (min-width: 768px) {
+  .footer-content__block {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
 
 .footer-content__input {
-  min-width: 358px;
+  min-width: 450px;
   height: 50px;
+  margin-bottom: 30px;
   background-color: #2F303A;
   border-radius: 4px;
   padding-left: 16px;
@@ -1539,6 +1589,11 @@ ul {
 .footer-content__input:focus {
   border-color: #2196F3;
   color: #ECECEC;
+}
+@media screen and (min-width: 1200px) {
+  .footer-content__input {
+    min-width: 358px;
+  }
 }
 
 .footer-content__button {
@@ -1570,9 +1625,23 @@ ul {
           transform: translateY(-50%);
 }
 
+.online {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
 @media screen and (max-width: 767px) {
   .online {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .online {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
   }
 }
 
