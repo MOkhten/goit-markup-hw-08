@@ -124,21 +124,23 @@
     display: block;
 }
 
-.menu-button .is-open .icon-menu {
+.mob-menu .is-open .menu-close-btn {
     display: none;
 }
 
 
-.menu-container {
-    padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 40px;
-        padding-left: 48px;
+
+ .menu-container{
+@media screen and (max-width: 767px) {
+ padding-top: 10px;
+ padding-right: 10px;
+ padding-bottom: 40px;
+     padding-left: 48px;
         background-color: #FFFFFF;
         text-align: left;
         font-size: 40px;
-    @media screen and (max-width: 767px) {
-            display: none;
+    
+            // display: none;
             position: fixed;
                 top: 0%;
                 left: 0%;
@@ -147,9 +149,11 @@
                 &.is-open {
                     display: block;
                 }
+
         }
     @include tablet{
         display: flex;
+        
     }
 }
 
