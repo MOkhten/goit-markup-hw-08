@@ -40,10 +40,66 @@
             </svg>
             +38 096 111 11 11 </a>
             </ul>
-        </nav>
-        </div>
-        </div>
-        </header>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >    
+    <svg class="" width="40" height="40">
+    <use class="icon-menu" href=".//img/symbols-defs.svg#icon-menu"></use>
+        </svg>
+</button>
+<div class="menu-container js-menu-container" id="menu-container" >
+     <button type="button" class="menu-toggle js-close-menu" >
+        <svg class="" width="40" height="40">
+    <use class="icon-cross" href=".//img/symbols-defs.svg#icon-crosss"></use>
+    </svg>
+</button>
+<div class="mob-container--top">
+    <ul class="menu__nav__list">
+        <li class="menu__nav__item"><a href="" class="menu__nav__link current">Студия</a></li>
+        <li class="menu__nav__item"><a href="./portfolio.html" class="menu__nav__link">Портфолио</a></li>
+        <li class="menu__nav__item"><a href="" class="menu__nav__link">Контакты</a></li>
+    </ul>
+    </div>
+    <div class="mob-container--bottom">
+    <ul class="menu__soc">
+         <li class="menu__nav__items">
+            <a href="tel+380961111111" class="links menu__soc__link--tel">
+                <svg class="soc__icon" width="10" height="20">
+                <use href=".//img/symbols-defs.svg#icon-phone">
+                </use>
+            </svg>
+            +38 096 111 11 11 </a>
+            
+    </li>
+        <li class="menu__nav__items">
+            <a href="info@devstudio.com" class="links menu__soc__link">
+                
+                <svg class="soc__icon" width="16" height="12">
+                <use href=".//img/symbols-defs.svg#icon-envelope">
+                </use>
+            </svg>
+            info@devstudio.com </a>
+        </li>
+    
+    </ul>
+    <ul class="menu__soc--list">
+<li class="menu__soc--list-item">
+    <a href="" class="menu__soc--list-link">Instagram</a> 
+</li>
+<li class="menu__soc--list-item">
+    <a href="Twitter" class="menu__soc--list-link">Twitter</a> </li>
+<li class="menu__soc--list-item">
+    <a href="" class="menu__soc--list-link">Facebook</a> </li>
+<li class="menu__soc--list-item">
+    <a href="" class="menu__soc--list-link">LinkedIn</a> </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+</div>
+</header>
 
         <main>
             <section class="content">
@@ -217,8 +273,9 @@
             </main>
 
             <footer class="footer">
-                 <div class="footer__wrap">
+                 
         <div class="container">
+            <div class="footer__wrap">
             <section class="footer__adress">
         <a href="" class="header__logo">Web<span class="header__logo--white">Studio </span> </a>
         <address>
@@ -292,7 +349,88 @@
         </section>
     </div>
     </div>
+    <div class="footer__mobile">
+        <div class="footer__mobile__wrap">
+        <div class="container">
+            <section class="footer__mobile__adress">
+        <a href="" class="header__logo">Web<span class="header__logo--white">Studio </span> </a>
+        <address>
+            <ul class="footer__mobile__nav">
+                <li class="footer__mobile__nav--item">
+                    <a href="" class="footer__adress--map">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+
+                <li class="footer__mobile__nav--item">
+                    <a href="" class="footer__adress--info">info@devstudio.com</a>
+                </li>
+
+                <li><a href="" class="footer__adress--info">+38 096 111 11 11</a></li>
+            </ul>
+    
+        </address>
+        
+        </section>
+
+        <section class="mobile__online">
+            <h2 class="socials__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <ul class="socials__list">
+                    <li class="socials__item">
+                        <a href="" class="socials__link--dark">
+                            <svg class="socials__icon--white" width="20" height="20">
+                                <use href=".//img/symbols-defs.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                
+                    <li class="socials__item">
+                        <a href="" class="socials__link--dark">
+                            <svg class="socials__icon--white" width="20" height="16.25">
+                                <use href=".//img/symbols-defs.svg#icon-bird">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                
+                    <li class="socials__item">
+                        <a href="" class="socials__link--dark">
+                            <svg class="socials__icon--white" width="10" height="20">
+                                <use href=".//img/symbols-defs.svg#icon-f">
+                                </use>
+                            </svg>
+                        </a>
+                
+                    </li>
+                
+                    <li class="socials__item">
+                        <a href="" class="socials__link--dark">
+                            <svg class="socials__icon--white" width="20" height="20">
+                                <use href=".//img/symbols-defs.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="footer-content__mobile">
+            <p class="footer-content__title">ПОДПИШИСЬ НА РАССЫЛКУ</p>
+            <div class="footer-content__block-mobile">
+            <input type="email" class="footer-content__input-mobile" name="user-email" id="user-email" placeholder="E-mail" required/>
+        
+        <button class="footer-content__button"> Подписаться <svg class="footer-content__icon" width="24" height="24">
+                <use href=".//img/icon-defs.svg#icon-icon-send">
+                </use>
+            </svg></button>
+        </div>
+        </section>
+    </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
+    </body>
+    
     
     </body>
             

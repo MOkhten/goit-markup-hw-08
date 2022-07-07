@@ -1,10 +1,18 @@
 
 .btn__nav {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+    margin-top: 66px;
+    margin-bottom: 46px;
+    @include desktop {
+justify-content: center;
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
+    }
     & .btn__item+.btn__item {
             margin-left: 8px;
         }
@@ -40,3 +48,10 @@
         }
 }
 
+.btn {
+    @media screen and (max-width: 767px){
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
