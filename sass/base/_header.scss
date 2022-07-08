@@ -310,7 +310,9 @@ margin-left: auto;
 
 .soc__icon {
     fill: currentColor;
-    
+    @include desktop {
+            margin-right: 10px;
+        }
     
     &:hover,
     &:focus {
@@ -321,8 +323,6 @@ margin-left: auto;
         display: none;
         margin-right: 0px;}
 }
-@include desktop {
-    margin-right: 10px;
-}
+
 
 
