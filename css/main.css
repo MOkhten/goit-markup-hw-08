@@ -312,7 +312,7 @@ ul {
   position: relative;
 }
 
-.menu__soc--list-linkv {
+.menu__soc--list-link {
   font-size: 18px;
   font-weight: 500;
   color: var(--accent-color);
@@ -382,7 +382,7 @@ ul {
 }
 
 .links::before {
-  content: "";
+  content: " ";
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -783,16 +783,16 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-  width: 480px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .content {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .content {
-    width: 1200px;
+    min-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }

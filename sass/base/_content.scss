@@ -4,17 +4,16 @@
 .content {
     padding-top: 60px;
     padding-bottom: 60px;
-
     text-align: center;
-            width: 480px;
+            width: 100%;
         
     
         @include tablet {
-            width: 768px;
+            min-width: 768px;
         }
     
         @include desktop {
-            width: 1200px;
+            min-width: 1200px;
             padding-top: 94px;
                 padding-bottom: 94px;
         }
