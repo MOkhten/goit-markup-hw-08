@@ -4,9 +4,10 @@
 .content {
     padding-top: 60px;
     padding-bottom: 60px;
-    @include mobile {
+
+    text-align: center;
             width: 480px;
-        }
+        
     
         @include tablet {
             width: 768px;
@@ -17,7 +18,6 @@
             padding-top: 94px;
                 padding-bottom: 94px;
         }
-       
 }
 
 
