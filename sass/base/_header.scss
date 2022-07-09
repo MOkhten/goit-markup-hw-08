@@ -59,6 +59,7 @@
 
 .nav__item {
     display: flex;
+ 
 }
 
 .nav__link.current {
@@ -272,9 +273,10 @@ margin-left: auto;
         }
                 }
 @include desktop {
-    display: flex;
+    display: inline-flex;
     text-align: center;
     justify-content: center;
+    
 }
 }
 
@@ -325,6 +327,9 @@ margin-left: auto;
 .mail {
     @include tablet{
     margin-bottom: 10px;}
+    @include desktop {
+        margin-bottom: 0px;
+    }
 }
 .soc__icon {
     fill: currentColor;
