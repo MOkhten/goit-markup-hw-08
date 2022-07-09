@@ -60,6 +60,10 @@
     display: flex;
 }
 
+.nav__link.current {
+    color: var(--accent-color);
+}
+
 .nav__link.current::after {
 display: none;
     
