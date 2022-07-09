@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
 
+
 }
 
 .nav .link :current {
@@ -272,7 +273,8 @@ margin-left: auto;
                 }
 @include desktop {
     display: flex;
-    
+    text-align: center;
+    justify-content: center;
 }
 }
 
@@ -314,13 +316,16 @@ margin-left: auto;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    
+    margin-bottom: 10px;
     @include desktop {
         font-size: 14px;
-
     }
 }
 
+.mail {
+    @include tablet{
+    margin-bottom: 10px;}
+}
 .soc__icon {
     fill: currentColor;
     margin-right: 10px;
