@@ -81,11 +81,7 @@ justify-content: left;
 .footer-content {
     
         display: none;
-        @include desktop {
-                margin-left: 93px;
-                margin-top: 0px;
-                display: block;
-            }
+       
      @include tablet {
         display: flex;
         flex-wrap: wrap;
@@ -93,7 +89,12 @@ justify-content: left;
         text-align: center;
         margin-top: 60px;
      }  
-
+     
+ @include desktop {
+     margin-left: 93px;
+     margin-top: 0px;
+     display: block;
+ }
     
 }
 

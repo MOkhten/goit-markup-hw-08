@@ -9,6 +9,10 @@
     margin-bottom: 46px;
     grid-gap: 8px;
         grid-row-gap: 15px;
+        @include tablet {
+            text-align: center;
+            justify-content: center;
+        }
     @include desktop {
 justify-content: center;
     margin-top: 0px;
