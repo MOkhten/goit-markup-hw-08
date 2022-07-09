@@ -105,20 +105,30 @@ justify-content: left;
 .footer-content__title {
     color: var(--text-color-secondary);
     font-weight: 700;
+    @include tablet {
+        text-align: center;
+        justify-content: center;
+    }
+    @include desktop {
+        text-align: left;
+        justify-content: left;
+    }
 }
 
 .footer-content__block {
         
     // display: block;
         justify-content: center;
-         align-items: center;
+        align-items: center;
          display: flex;
          flex-direction: column;
         
       
     
     @media screen and (min-width: 1200px) {
-display: inline-flex;
+display: flex;
+flex-direction: row;
+align-items: baseline;
     }
 }
 
