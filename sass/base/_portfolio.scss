@@ -60,6 +60,8 @@
     padding-right: 24px;
     margin: 0px;
     width: 100%;
+    justify-content: left;
+    text-align: left;
 
         @include tablet {
             width: 354px;
@@ -67,6 +69,8 @@
     
         @include desktop {
             width: 370px;
+            justify-content: center;
+            text-align: center;
         }
     }
 
