@@ -130,11 +130,14 @@
     padding: 0px;
     line-height: 1.71;
     max-width: 450px;
+    justify-content: left;
+        text-align: left;
     
         @include tablet {
             width: 354px;
             margin-left: 0px;
             margin-right: 0px;
+            
         }
     
         @include desktop {

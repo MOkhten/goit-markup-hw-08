@@ -929,6 +929,10 @@ img {
   padding: 0px;
   line-height: 1.71;
   max-width: 450px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .feature-list__about {
