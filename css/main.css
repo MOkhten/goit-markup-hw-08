@@ -1219,9 +1219,8 @@ img {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 40px;
-  grid-row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .btn__nav {
@@ -1234,6 +1233,7 @@ img {
 @media screen and (min-width: 768px) {
   .btn__nav {
     margin-bottom: 30px;
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1245,9 +1245,6 @@ img {
     margin-bottom: 50px;
     padding: 0px;
   }
-}
-.btn__nav .btn__item + .btn__item {
-  margin-left: 8px;
 }
 .btn__nav .btn__style:hover, .btn__nav .btn__style:focus {
   color: var(--text-color-secondary);
@@ -1280,6 +1277,15 @@ img {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn__item {
+  margin-bottom: 15px;
+}
+
+.btn__item:not(last-child) {
+  margin-bottom: 15px;
+  margin-right: 8px;
 }
 
 /* -----------------------------------------CARD-SET--------------------------------------------- */
