@@ -6,18 +6,22 @@
     text-align: left;
     justify-content: left;
     margin-top: 10px;
-    margin-bottom: 46px;
-    grid-gap: 8px;
+    margin-bottom: 40px;
+    // grid-gap: 8px;
         grid-row-gap: 15px;
         @include tablet {
             text-align: center;
             justify-content: center;
         }
+    @include tablet {
+        margin-bottom: 30px;
+    }
     @include desktop {
 justify-content: center;
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
+    
     }
     & .btn__item+.btn__item {
             margin-left: 8px;
