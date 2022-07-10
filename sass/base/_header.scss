@@ -163,6 +163,7 @@ display: none;
             justify-content: space-between;
             height: 100%;
             padding-left: 0px;
+           
         }
 
         }
@@ -170,7 +171,12 @@ display: none;
         display: flex;
         
     }
-}
+    @include desktop {
+        display: none;
+    }
+    
+    }
+
 
 .menu__nav__list {
     @include tablet {
@@ -266,7 +272,7 @@ font-size: 18px;
     
 @include tablet {
 display: block;
-margin-left: auto;
+
 
     & .links:hover,
     & .links:focus {
@@ -274,10 +280,11 @@ margin-left: auto;
         }
                 }
 @include desktop {
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: right;
+    margin-left: auto;
 }
 }
 

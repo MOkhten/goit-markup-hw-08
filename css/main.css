@@ -253,6 +253,11 @@ img {
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .menu__nav__list {
@@ -353,7 +358,6 @@ img {
 @media screen and (min-width: 768px) {
   .soc {
     display: block;
-    margin-left: auto;
   }
   .soc .links:hover, .soc .links:focus {
     color: var(--accent-color);
@@ -361,13 +365,18 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .soc {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    margin-left: auto;
   }
 }
 
